@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+	<head>
+		<!-- TITLE -->
+		<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+		<title>Charapanke</title>
+		<!-- META TAGS -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="Charapanke - proizvodnja i prodaja čarapa"/>
+		<meta name="keywords" content="carape, prodaja, muske, zenske, decje"/>
+		<meta name="autor" content="Aleksa Savic">
+		<meta name="language" content="serbian"/>
+		<meta name="copyright" content="Aleksa Savic 2023, all rights reserved"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- CSS --> 
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+		<!-- ICONS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+		<!-- FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<!-- BOOTSTRAP -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	</head>
+    <body>
+		<nav class="navbar navbar-expand-lg sticky-top bg-secondary-subtle py-3 px-5 border-bottom border-3 border-success">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  <ul class="navbar-nav ms-auto">
+				<li class="nav-item ">
+				  <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="proizvodnja.html">Proizvodnja</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodaja</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="prodaja.html#muske">Muške čarape</a></li>
+					  <li><a class="dropdown-item" href="prodaja.html#zenske">Ženske čarape</a></li>
+					  <li><a class="dropdown-item" href="prodaja.html#decje">Dečje čarape</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="kontakt.html">Kontakt</a>
+				</li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="autor.html">Autor</a>
+				</li>
+			  </ul>
+			</div>
+			</div>
+		</nav>
+		<main>
+		<div class="container margina">
+			<div class="row text-center mt-5">
+				<h1>Kontakt</h1>
+			</div>
+			<div class="row text-center mt-5">
+				<h2 class="text-dark">Tu smo za sva vaša pitanja!</h2>
+			</div>
+			<div class="row d-flex justify-content-center mt-5">
+				<div class="col-6 mb-5 d-flex justify-content-center">
+					<button type="button" class="btn btn-success text-light p-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-question text-light"></i>&nbsp;&nbsp;Kako mogu da poručim čarapu sa izgledom po želji?</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog mt-5 margina">
+						<div class="modal-content">
+							<div class="modal-header p-2">
+							<h2 class="modal-title fs-5" id="exampleModalLabel">Nacrtaj čarapu!</h2>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body p-3">
+								<p>Napravite Vaš brend! Ukoliko naš standardni program ne zadovoljava Vaše potrebe ili prosto imate želju da se osećate posebno i sami kreirate jedan odevni predmet koji će nositi Vas lični pečat, naš kreativni tim Vam stoji na usluzi.<br/><br/>Izradićemo čarape po Vašoj želji, u skladu sa vašim potrebama, unikate, nešto što niko drugi da sada nije smislio, samo za Vas. Samo popunite formu, pošaljite sliku crteža Vaše željene čarape i po potrebi opišite željeni proizvod u polju za poruku.</p>
+							</div>
+							<div class="modal-footer p-2 d-flex justify-content-center">
+							<button type="button" class="btn btn-secondary py-1 px-3" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="row d-flex justify-content-center">
+				<form class="col-12 mb-5 py-5 d-flex flex-column justify-content-evenly align-items-center bg-secondary-subtle" action="#" method="get" id="form">
+					<label for="imprem" class="text-center text-dark fw-bold">Ime i prezime:</label>
+					<input class="p-1 border border-success" type="text" name="imprem" id="imprem" placeholder="Petar Perić" required="required" />
+					<label for="imejl" class="text-center text-dark fw-bold">Email:</label>
+					<input class="p-1 border border-success" type="email" name="imejl" id="imejl" placeholder="petarperic@gmail.com" required="required" />
+					<label for="mesidz" class="text-center text-dark fw-bold">Poruka:</label>
+					<textarea class="p-1 border border-success" type="text" name="mesidz" id="mesidz" required="required" placeholder="Pišite nam:"></textarea>
+					<label for="slika" class="text-center text-dark fw-bold">Pošaljite sliku:</label>
+					<div id="dugmad" class="container-fluid d-flex justify-content-center">
+						<input type="file" id="slika" name="slika"/>
+					</div>
+					<div id="dugmad" class="container-fluid d-flex justify-content-evenly">
+						<input class="dugme border border-success fw-bold" type="submit" id="posalji" name="posalji" value="Pošalji" />
+						<input class="dugme border border-success fw-bold" type="reset" id="odustani" name="odustani" value="Odustani" />
+					</div>
+				</form>
+			</div>
+		</main>
+			<footer class="bg-secondary-subtle mt-5 d-flex justify-content-center">
+				<div class="container">
+				  <div class="row d-flex justify-content-evenly">
+				   <div class="col-4 mt-3 text-center">
+					<p class="fw-bold text-success">Kontakt</p>
+				   <ul class="list-unstyled mt-1">
+						<li><p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+381 60 123 45 67</p></li>
+						<li><p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;charapanke@gmail.com</p></li>
+				   </ul>
+				  </div>
+				  <div class="col-4 mt-3 text-center">
+					<p class="fw-bold text-success">Društvene mreže</p>
+				   <ul class="list-unstyled mt-1">
+						<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
+						<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+						<li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;Pinterest</a></li>
+				   </ul>
+				  </div>
+				  <div class="col-4 mt-3 text-center">
+					<p class="fw-bold text-success">Korisni fajlovi</p>
+				   <ul class="list-unstyled mt-1">
+						<li><a href="sitemap.xml"><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;Sitemap</a></li>
+						<li><a href="sitemap.xml"><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp;Originalni CSS</a></li>
+				   </ul>
+				  </div>
+				</div>
+				 <div class="container-fluid my-3">
+				 <div class="row">
+				 <div class="col-md-12">
+				  <p class="text-center fw-bold text-success">&copy; 2023 Charapanke. Sva prava zadržana</p>
+			   </div>
+			   </div>
+			   </div>
+			  </footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>
