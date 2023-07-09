@@ -11,7 +11,7 @@
     --bela: #e2e0d0;
 }
 /* UOPŠTENO */
-p, a, i, label{
+p, a, label{
     color: var(--crna) !important;
     font-size: 18px !important;
 }
@@ -24,14 +24,16 @@ h1, h3, h5, .modal-title, .active, .carousel-caption a{
 .kopi{
     border-top: 2px solid var(--bela);
 }
-
+i{
+    font-size: 18px !important;
+}
 body, header, input, textarea, .modal-content, .card, .dropdown-menu{
     background-color: var(--bela) !important;
 }
 footer, form, .dalmo, .card a{
     background-color: var(--zelena) !important;
 }
-footer p, footer a, footer i, form label, .dalmo, .dalmo i, .card a{
+footer p, footer a, i, form label, .dalmo, .card a{
     color: var(--bela) !important;
 }
 .modal-header{
