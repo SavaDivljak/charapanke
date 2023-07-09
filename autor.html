@@ -3,19 +3,18 @@
 	<head>
 		<!-- TITLE -->
 		<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
-		<title>Charapanke</title>
+		<title>Charapanke - Autor</title>
 		<!-- META TAGS -->
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="description" content="Charapanke - proizvodnja i prodaja čarapa"/>
 		<meta name="keywords" content="carape, prodaja, muske, zenske, decje"/>
-		<meta name="autor" content="Aleksa Savic">
+		<meta name="autor" content="Aleksa Savić">
 		<meta name="language" content="serbian"/>
-		<meta name="copyright" content="Aleksa Savic 2023, all rights reserved"/>
+		<meta name="copyright" content="Aleksa Savić 2023. Sva prava zadržana"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<!-- CSS --> 
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-		<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.min.css"/>
 		<!-- ICONS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 		<!-- FONT -->
@@ -26,46 +25,48 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	</head>
     <body>
-		<nav class="navbar navbar-expand-lg sticky-top bg-secondary-subtle py-3 px-5 border-bottom border-3 border-success">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			  <ul class="navbar-nav ms-auto">
-				<li class="nav-item ">
-				  <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="proizvodnja.html">Proizvodnja</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodaja</a>
-					<ul class="dropdown-menu">
-					  <li><a class="dropdown-item" href="prodaja.html#muske">Muške čarape</a></li>
-					  <li><a class="dropdown-item" href="prodaja.html#zenske">Ženske čarape</a></li>
-					  <li><a class="dropdown-item" href="prodaja.html#decje">Dečje čarape</a></li>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="kontakt.html">Kontakt</a>
-				</li>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="autor.html">Autor</a>
-				</li>
-			  </ul>
-			</div>
-			</div>
-		</nav>
-		<main class="d-flex justify-content-center">
+		<header class="sticky-top py-3 px-5 shadow border-bottom border-3">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				  <ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-3">
+					  <a class="nav-link fw-bold" href="index.html">Početna</a>
+					</li>
+					<li class="nav-item mx-3">
+					  <a class="nav-link fw-bold" href="proizvodnja.html">Proizvodnja</a>
+					</li>
+					<li class="nav-item dropdown mx-3">
+						<a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodaja</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="prodaja.html#muske">Muške čarape</a></li>
+						  <li><a class="dropdown-item" href="prodaja.html#zenske">Ženske čarape</a></li>
+						  <li><a class="dropdown-item" href="prodaja.html#decje">Dečje čarape</a></li>
+						</ul>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link fw-bold" href="kontakt.html">Kontakt</a>
+					</li>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link fw-bold active" href="autor.html">Autor</a>
+					</li>
+				  </ul>
+				</div>
+				</div>
+			</nav>
+		</header>
+		<main class="d-flex justify-content-center w-100">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
-				<div class="col-4 m-5 d-flex justify-content-center">
-					<img class="border border-success border-5" src="assets/img/autor.jpg"/>
+				<div class="col-10 col-md-4 m-5 d-flex justify-content-center">
+					<img id="autor" class="shadow rounded" src="assets/img/autor.jpg" alt="autor"/>
 				</div>
-				<div class="col-4 m-5 d-flex justify-content-evenly align-items-center flex-column">
+				<div class="col-10 col-md-4 m-5 d-flex justify-content-evenly align-items-center flex-column" id="ainfo">
 					<h3 class="fw-bold">Ime i prezme:</h3>
 					<p class="bigf">Aleksa Savić</p>
 					<h3 class="fw-bold">Broj indeksa:</h3>
@@ -78,40 +79,40 @@
 			</div>
 		</div>
 	</main>
-		<footer class="bg-secondary-subtle d-flex justify-content-center">
-			<div class="container">
-			  <div class="row d-flex justify-content-evenly">
-			   <div class="col-4 mt-3 text-center">
-				<p class="fw-bold text-success">Kontakt</p>
-			   <ul class="list-unstyled mt-1">
-					<li><p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+381 60 123 45 67</p></li>
-					<li><p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;charapanke@gmail.com</p></li>
-			   </ul>
-			  </div>
-			  <div class="col-4 mt-3 text-center">
-				<p class="fw-bold text-success">Društvene mreže</p>
-			   <ul class="list-unstyled mt-1">
-					<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
-					<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
-					<li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;Pinterest</a></li>
-			   </ul>
-			  </div>
-			  <div class="col-4 mt-3 text-center">
-				<p class="fw-bold text-success">Korisni fajlovi</p>
-			   <ul class="list-unstyled mt-1">
-					<li><a href="sitemap.xml"><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;Sitemap</a></li>
-					<li><a href="sitemap.xml"><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp;Originalni CSS</a></li>
-			   </ul>
-			  </div>
+	<footer class="d-flex justify-content-center">
+		<div class="container">
+		  <div class="row d-flex justify-content-evenly">
+		   <div class="col-md-4 col-sm-10 mt-3 text-center">
+			<p class="fw-bold">Kontakt</p>
+		   <ul class="list-unstyled mt-1">
+				<li><p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+381 60 123 45 67</p></li>
+				<li><p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;charapanke@gmail.com</p></li>
+		   </ul>
+		  </div>
+		  <div class="col-md-4 col-sm-10 mt-3 text-center">
+			<p class="fw-bold">Društvene mreže</p>
+		   <ul class="list-unstyled mt-1">
+				<li><a class="text-decoration-none" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
+				<li><a class="text-decoration-none" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+				<li><a class="text-decoration-none" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;Pinterest</a></li>
+		   </ul>
+		  </div>
+		  <div class="col-md-4 col-sm-10 mt-3 text-center">
+			<p class="fw-bold">Korisni fajlovi</p>
+		   <ul class="list-unstyled mt-1">
+				<li><a class="text-decoration-none" target="_blank" href="sitemap.xml"><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;Sitemap</a></li>
+				<li><a class="text-decoration-none" target="_blank" href="assets/css/style.css"><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp;Originalni CSS</a></li>
+		   </ul>
+		  </div>
+		</div>
+		<div class="container-fluid mt-3 mb-1 pt-1 kopi">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center">&copy; Aleksa Savić 2023. Sva prava zadržana</p>
+				</div>
 			</div>
-			 <div class="container-fluid my-3">
-			 <div class="row">
-			 <div class="col-md-12">
-			  <p class="text-center fw-bold text-success">&copy; 2023 Charapanke. Sva prava zadržana</p>
-		   </div>
-		   </div>
-		   </div>
-		  </footer>
+		</div>
+	  </footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	</body>
 </html>
