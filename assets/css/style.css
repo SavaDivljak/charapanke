@@ -124,6 +124,9 @@ textarea{
     #slika{
         width: 35% !important;
     }
+    .modal-dialog{
+        width: 90% !important;
+    }
 }
 @media screen and (max-width: 426px){
     input, textarea{
