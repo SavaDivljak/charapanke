@@ -39,14 +39,8 @@ footer p, footer a, i, form label, .dalmo, .card a{
 .modal-header{
     border-bottom: 2px solid var(--zelena) !important;
 }
-.card{
-    border: 3px solid var(--zelena) !important;
-}
 .card img{
     height: 60% !important;
-}
-.card-body{
-    border-top: 3px solid var(--zelena);
 }
 /* POCETNA */
 .carousel-inner, .carousel-item{
