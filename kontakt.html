@@ -89,12 +89,18 @@
 		</div>
 			<div class="row d-flex justify-content-center">
 				<form class="col-12 py-1 d-flex flex-column justify-content-evenly align-items-center" action="#" method="get" id="form">
-					<label for="imprem" class="text-center">Ime i prezime:</label>
-					<input class="p-1 rounded" type="text" name="imprem" id="imprem" placeholder="Petar Perić" required="required" />
-					<label for="imejl" class="text-center">Email:</label>
-					<input class="p-1 rounded" type="email" name="imejl" id="imejl" placeholder="petarperic@gmail.com" required="required" />
-					<label for="mesidz" class="text-center">Poruka:</label>
-					<textarea class="p-1 rounded" type="text" name="mesidz" id="mesidz" required="required" placeholder="Pišite nam:"></textarea>
+					<div class="mb-3 input">
+						<label for="exampleFormControlInput1" class="form-label">Ime i prezime:</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Petar Perić">
+					  </div>
+					  <div class="mb-3 input">
+						<label for="exampleFormControlInput1" class="form-label">Imejl adresa:</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="imejl@primer.com">
+					  </div>
+					  <div class="mb-3 input">
+						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+					  </div>
 					<div id="dugmad" class="col-6 col-sm-10 d-flex justify-content-evenly">
 						<label for="slika" class="text-center">Pošaljite sliku:</label>
 						<input class="rounded" type="file" id="slika" name="slika"/>

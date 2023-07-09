@@ -74,14 +74,9 @@ footer p, footer a, footer i, form label, .dalmo, .dalmo i, .card a{
 form{
     height: 600px;
 }
-input{
-	height: 35px;
-	width: 60%;
-    border-color: var(--bela);
-}
-textarea{
-	height: 250px;
-	width: 60%;
+.input{
+	width: 60% !important;
+    border-color: var(--bela) !important;
 }
 #dugmad{
     height: 40px;
@@ -103,7 +98,7 @@ textarea{
     #ainfo h3, #ainfo p{
         margin: 10px auto !important;
     }
-    input, textarea{
+    form .input{
         width: 70% !important;
     }
     #slika{
@@ -129,7 +124,7 @@ textarea{
     }
 }
 @media screen and (max-width: 426px){
-    input, textarea{
+    form .input{
         width: 80% !important;
     }
     #slika{
@@ -161,16 +156,16 @@ textarea{
     .carousel-caption{
         width: 80% !important;
     }
-    input, textarea{
+    form .input{
         width: 90% !important;
-    }
-    #slika{
-        width: 45% !important;
     }
     .dalmo{
         width: 80% !important;
     }
     #autor{
         width: 250px !important;
+    }
+    #dugmad{
+        width: 80% !important;
     }
 }
