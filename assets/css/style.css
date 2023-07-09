@@ -11,7 +11,7 @@
     --bela: #e2e0d0;
 }
 /* UOPŠTENO */
-p, a, label{
+p, a, label, .mreze{
     color: var(--crna) !important;
     font-size: 18px !important;
 }
