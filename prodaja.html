@@ -14,18 +14,18 @@
 		<meta name="copyright" content="Aleksa Savić 2023. Sva prava zadržana"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<!-- CSS --> 
-		<link rel="stylesheet" type="text/css" href="assets/css/style.min.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 		<!-- ICONS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 		<!-- FONT -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
 		<!-- BOOTSTRAP -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	</head>
     <body>
-		<header class="sticky-top py-3 px-5 shadow border-bottom border-3">
+		<header class="sticky-top py-3 ps-5 pe-3 shadow border-bottom border-3">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
@@ -35,13 +35,13 @@
 					  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 				  <ul class="navbar-nav ms-auto">
 					<li class="nav-item mx-3">
-					  <a class="nav-link fw-bold" href="index.html">Početna</a>
+					  <a class="nav-link" href="index.html">Početna</a>
 					</li>
 					<li class="nav-item mx-3">
-					  <a class="nav-link fw-bold" href="proizvodnja.html">Proizvodnja</a>
+					  <a class="nav-link" href="proizvodnja.html">Proizvodnja</a>
 					</li>
 					<li class="nav-item dropdown mx-3">
-						<a class="nav-link fw-bold dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodaja</a>
+						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prodaja</a>
 						<ul class="dropdown-menu">
 						  <li><a class="dropdown-item" href="prodaja.html#muske">Muške čarape</a></li>
 						  <li><a class="dropdown-item" href="prodaja.html#zenske">Ženske čarape</a></li>
@@ -49,33 +49,34 @@
 						</ul>
 					</li>
 					<li class="nav-item mx-3">
-						<a class="nav-link fw-bold" href="kontakt.html">Kontakt</a>
+						<a class="nav-link" href="kontakt.html">Kontakt</a>
 					</li>
 					</li>
 					<li class="nav-item mx-3">
-						<a class="nav-link fw-bold" href="autor.html">Autor</a>
+						<a class="nav-link" href="autor.html">Autor</a>
 					</li>
 				  </ul>
 				</div>
 				</div>
 			</nav>
 		</header>
-		<main class="w-100">
-			<div class="container-fluid">
-				<div id="muske" class="row text-center my-5">
-					<h1 class="fw-bold text-uppercase">Muške čarape</h1>
+		<main>
+			<div class="container mx-auto">
+				<div id="muske" class="row my-5">
+					<h1 class="ps-2">Muške čarape</h1>
+					<hr class="mt-1"/>
 				</div>
-				<div class="row my-5 d-flex justify-content-evenly">
+				<div class="row my-5 justify-content-evenly">
 					<div class="col-lg-2 col-md-5 col-sm-8 my-3">
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/muske1.jpg" class="card-img-top" alt="Muške BIH čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Bosna čarape</h5>
-							  <p class="card-text fw-bold">400 RSD</p>
+							  <h5 class="card-title">Bosna čarape</h5>
+							  <p class="card-text">400 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -84,12 +85,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/muske2.jpg" class="card-img-top" alt="Muške bele čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Bele čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Bele čarape m.</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -98,12 +99,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/muske3.jpg" class="card-img-top" alt="Muške termo čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Termo čarape</h5>
-							  <p class="card-text fw-bold">300 RSD</p>
+							  <h5 class="card-title">Termo čarape</h5>
+							  <p class="card-text">300 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -112,31 +113,32 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/muske4.jpg" class="card-img-top" alt="Muške crne čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Crne čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Crne čarape m.</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="zenske" class="row text-center my-5">
-					<h1 class="fw-bold text-uppercase">Ženske čarape</h1>
+				<div id="zenske" class="row my-5">
+					<h1 class="ps-2">Ženske čarape</h1>
+					<hr class="mt-1"/>
 				</div>
-				<div class="row my-5  justify-content-evenly">
+				<div class="row my-5 justify-content-evenly">
 					<div class="col-lg-2 col-md-5 col-sm-8 my-3">
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/zenske1.jpg" class="card-img-top" alt="Ženske natkolenice">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Natkolenice pruge</h5>
-							  <p class="card-text fw-bold">500 RSD</p>
+							  <h5 class="card-title">Natkolenice pruge</h5>
+							  <p class="card-text">500 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -145,12 +147,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/zenske2.jpg" class="card-img-top" alt="Ženske čarape cvetići">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Cvetići čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Cvetići čarape</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -159,13 +161,13 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/zenske3.jpg" class="card-img-top" alt="Ženske božićne čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Božić čarape</h5>
-							  <p class="card-text fw-bold">200 RSD</p>
+							  <h5 class="card-title">Božićne čarape</h5>
+							  <p class="card-text">200 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-							  </div>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -173,31 +175,32 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/zenske4.jpg" class="card-img-top" alt="Ženske nazuvice">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Nazuvice</h5>
-							  <p class="card-text fw-bold">200 RSD</p>
+							  <h5 class="card-title">Nazuvice ženske</h5>
+							  <p class="card-text">200 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="decje" class="row text-center my-5">
-					<h1 class="fw-bold text-uppercase">Dečje čarape</h1>
+				<div id="decje" class="row my-5">
+					<h1 class="ps-2">Dečje čarape</h1>
+					<hr class="mt-1"/>
 				</div>
 				<div class="row my-5  justify-content-evenly">
 					<div class="col-lg-2 col-md-5 col-sm-8 my-3">
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/decje1.jpg" class="card-img-top" alt="Dečje čarape avioni">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Aviončići čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Aviončići čarape</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -206,12 +209,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/decje2.jpg" class="card-img-top" alt="Dečje čarape jagode">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Jagodice čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Jagodice čarape</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -220,12 +223,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/decje3.jpg" class="card-img-top" alt="Dečje čarape Sunđer Bob">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Spužvabob čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Spužva čarape</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -234,12 +237,12 @@
 						<div class="card shadow-lg text-center">
 							<img src="assets/img/decje4.jpg" class="card-img-top" alt="Miki Maus čarape">
 							<div class="card-body p-3">
-							  <h5 class="card-title fw-bold">Mile miš čarape</h5>
-							  <p class="card-text fw-bold">100 RSD</p>
+							  <h5 class="card-title">Mile miš čarape</h5>
+							  <p class="card-text">100 RSD</p>
 							  <div class="container-fluid d-flex justify-content-evenly mt-1">
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-heart"></i></a>
-								<a href="#" class="btn margina px-3 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-heart"></i></a>
+								<a href="#" class="btn mx-auto px-1 py-1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
 							  </div>
 							</div>
 						</div>
@@ -247,18 +250,18 @@
 				</div>
 			</div>
 		</main>
-		<footer class="d-flex justify-content-center">
-			<div class="container">
-			  <div class="row d-flex justify-content-evenly">
+		<footer>
+			<div class="container mx-auto">
+			  <div class="row">
 			   <div class="col-md-4 col-sm-10 mt-3 text-center">
-				<p class="fw-bold">Kontakt</p>
+				<p>Kontakt:</p>
 			   <ul class="list-unstyled mt-1">
 					<li><p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+381 60 123 45 67</p></li>
 					<li><p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;charapanke@gmail.com</p></li>
 			   </ul>
 			  </div>
 			  <div class="col-md-4 col-sm-10 mt-3 text-center">
-				<p class="fw-bold">Društvene mreže</p>
+				<p>Društvene mreže:</p>
 			   <ul class="list-unstyled mt-1">
 					<li><a class="text-decoration-none" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
 					<li><a class="text-decoration-none" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
@@ -266,14 +269,14 @@
 			   </ul>
 			  </div>
 			  <div class="col-md-4 col-sm-10 mt-3 text-center">
-				<p class="fw-bold">Korisni fajlovi</p>
+				<p>Korisni fajlovi:</p>
 			   <ul class="list-unstyled mt-1">
 					<li><a class="text-decoration-none" target="_blank" href="sitemap.xml"><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;Sitemap</a></li>
 					<li><a class="text-decoration-none" target="_blank" href="assets/css/style.css"><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp;Originalni CSS</a></li>
 			   </ul>
 			  </div>
 			</div>
-			<div class="container-fluid mt-3 mb-1 pt-1 kopi">
+			<div class="container-fluid kopi mt-3">
 				<div class="row">
 					<div class="col-md-12">
 						<p class="text-center">&copy; Aleksa Savić 2023. Sva prava zadržana</p>
